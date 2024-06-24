@@ -1,10 +1,12 @@
 import './App.css';
-import AllSky from './components/AllSky';
+import SkyCard from './components/SkyCard';
 
 function App() {
   return (
     <div className="App">
-      <AllSky />
+      <SkyCard baseURL="https://cam01.sci.ucalgary.ca/AllSkyCam/AllSkyCurrentImage.JPG" />
+      <SkyCard baseURL="https://cam01.sci.ucalgary.ca/AllSkyCam/SQMMpsasGraph.jpg" />
+      <SkyCard baseURL="https://cam01.sci.ucalgary.ca/netcam/152/1.jpg" />
     </div>
   );
 }
