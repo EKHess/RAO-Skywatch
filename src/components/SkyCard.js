@@ -48,9 +48,11 @@ function AllSky(props) {
     },[time, props.baseURL])
 
     return (
-        <div>  
+        <div className='skycard'>  
             <img key={Date.now()} src={imageObj.url} alt="AllSky view of skies over the RAO"/>
-            <p>Last Updated {time}</p>
+            <div className='update-container'>
+                <p className='update-text'>Last Updated {time}</p>
+            </div>
         </div>
     );
 }

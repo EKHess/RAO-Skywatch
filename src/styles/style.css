@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #424549;
+}
+
+.clock-container {
+    margin: 0 auto;
+    width: 300px;
+
+    padding: 30px;
+
+
+}
+
+.clock-container p {
+    font-size: 50px;
+    color: #7289da;
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.dad-container {
+    width: 100%;
+}
+
+.skycard-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.skycard {
+    /* border: 1px solid red; */
+    padding: 50px;
+}
+
+.skycard img {
+    width: 500px;
+    border-radius: 10px;
+}
+
+.skycard .update-container {
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+}
+
+.update-container {
+    /* border: 1px solid red; */
+    padding: 5px;
+}
+
+.update-text {
+    color: #939699;
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.signature-container {
+    /* border: 1px solid red; */
+    margin: 0 auto;
+    width: 250px;
+    padding: 30px;
+}
+
+.signature {
+    /* border: 1px solid red; */
+    color: #939699;
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.signature a {
+    color: #7289da;
+    text-decoration: none;
+}
+
+.signature a:hover {
+    text-decoration: underline;
+}
