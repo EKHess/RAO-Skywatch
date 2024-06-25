@@ -2,6 +2,8 @@ import React, { useState, useEffect} from 'react';
 
 function Clock() {
     const [time, setTime] = useState('');
+    const utc = new Date();
+    
 
     const formatTime = (val) => {
         if (val < 10) {
@@ -33,9 +35,10 @@ function Clock() {
     )
 
     return (
-        <>
+        <div className='clock-container'>
             <p>{time}</p>
-        </>
+            <p className='utc-time'>{utc.toUTCString()}</p>
+        </div>
     )
 }
 

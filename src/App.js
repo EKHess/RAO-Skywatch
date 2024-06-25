@@ -6,10 +6,8 @@ function App() {
   return (
     <div className="App">
       <div className="desktop">
-        <section>
-          <div className='clock-container'>
-            <Clock/>
-          </div>
+        <section className='clock-section'>
+          <Clock/>
         </section>
 
         <section>
