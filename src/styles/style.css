@@ -1,4 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Kode+Mono:wght@400..700&display=swap');
+@font-face {
+    font-family: "Square Sans Serif";
+    src: url('./fonts/square-sans-serif-7.regular-webfont.woff');
+    src: url('./fonts/square-sans-serif-7.regular-webfont.woff2');
+}
 
 * {
     box-sizing: border-box;
@@ -8,6 +15,9 @@
     --bg-color: #424549;
     --discord-purple: #7289da;
     --grey-text: #939699;
+    --font: "Orbitron", sans-serif;
+    --font2: "Square Sans Serif", "Orbitron", sans-serif;
+    --mono-font: "DM Mono", monospace;
 }
 
 body {
@@ -16,15 +26,18 @@ body {
 
 .nav-container {
     /* border: 1px solid red; */
+    border-bottom: 1px solid var(--grey-text);
+    width: 400px;
     display: flex;
     justify-content: center;
     gap: 40px;
     padding: 20px;
+    margin: 0 auto;
 }
 
 .nav-container a {
     text-decoration: none;
-    font-family: "Orbitron", sans-serif;
+    font-family: var(--mono-font);
     font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
@@ -60,7 +73,7 @@ body {
 
     font-size: 50px;
     color: var(--discord-purple);
-    font-family: "Orbitron", sans-serif;
+    font-family: var(--mono-font);
     font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
@@ -110,7 +123,7 @@ body {
 
 .update-text {
     color: var(--grey-text);
-    font-family: "Orbitron", sans-serif;
+    font-family: var(--mono-font);
     font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
@@ -126,7 +139,7 @@ body {
 .signature {
     /* border: 1px solid red; */
     color: var(--grey-text);
-    font-family: "Orbitron", sans-serif;
+    font-family: var(--mono-font);
     font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
