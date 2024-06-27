@@ -129,6 +129,15 @@ body {
     font-style: normal;
 }
 
+.single-img-container {
+    display: flex;
+    justify-content: center;
+}
+
+.single-img-container img {
+    width: 60vw;
+}
+
 .signature-container {
     /* border: 1px solid red; */
     margin: 0 auto;
