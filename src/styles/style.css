@@ -4,8 +4,40 @@
     box-sizing: border-box;
 }
 
-html {
-    background-color: #424549;
+:root {
+    --bg-color: #424549;
+    --discord-purple: #7289da;
+    --grey-text: #939699;
+}
+
+body {
+    background-color: var(--bg-color);
+}
+
+.nav-container {
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 20px;
+}
+
+.nav-container a {
+    text-decoration: none;
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    color: var(--grey-text);
+}
+
+.nav-container a:hover {
+    text-decoration: underline;
+}
+
+.nav-container a.active {
+    color: var(--discord-purple);
+    text-decoration: underline;
 }
 
 .clock-container {
@@ -27,7 +59,7 @@ html {
     /* border: 1px solid red; */
 
     font-size: 50px;
-    color: #7289da;
+    color: var(--discord-purple);
     font-family: "Orbitron", sans-serif;
     font-optical-sizing: auto;
     font-weight: 500;
@@ -35,7 +67,7 @@ html {
 }
 
 .clock-container .utc-time {
-    color: #939699;
+    color: var(--grey-text);
     font-size: 15px;
 }
 
@@ -77,7 +109,7 @@ html {
 }
 
 .update-text {
-    color: #939699;
+    color: var(--grey-text);
     font-family: "Orbitron", sans-serif;
     font-optical-sizing: auto;
     font-weight: 500;
@@ -93,7 +125,7 @@ html {
 
 .signature {
     /* border: 1px solid red; */
-    color: #939699;
+    color: var(--grey-text);
     font-family: "Orbitron", sans-serif;
     font-optical-sizing: auto;
     font-weight: 500;
@@ -101,7 +133,7 @@ html {
 }
 
 .signature a {
-    color: #7289da;
+    color: var(--discord-purple);
     text-decoration: none;
 }
 

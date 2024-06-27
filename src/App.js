@@ -1,30 +1,20 @@
 import './styles/style.css';
 import SkyCard from './components/SkyCard';
-import Clock from './components/Clock'
+import Clock from './components/Clock';
+import Root from './components/Root';
+import Home from './components/Home'
+
+import { Route, RouterProvider, createBrowserRouter, createRoutesFromElements } from 'react-router-dom';
+
+const router = createBrowserRouter(createRoutesFromElements(
+  <Route path='/' element={ <Root/> }>
+    <Route path='home' element={ <Home/> }/>
+  </Route>
+))
 
 function App() {
   return (
-    <div className="App">
-      <div className="desktop">
-        <section className='clock-section'>
-          <Clock/>
-        </section>
-
-        <section>
-          <div className='skycard-container'>
-            <SkyCard baseURL="https://cam01.sci.ucalgary.ca/AllSkyCam/AllSkyCurrentImage.JPG" />
-            <SkyCard baseURL="https://cam01.sci.ucalgary.ca/AllSkyCam/SQMMpsasGraph.jpg" />
-            <SkyCard baseURL="https://cam01.sci.ucalgary.ca/netcam/152/1.jpg" />
-          </div>
-        </section>
-      </div>
-
-      <footer>
-        <div className='signature-container'>
-          <p className='signature'>Made by <a href='#'>Eric Hess</a></p>
-        </div>
-      </footer>
-    </div>
+    <RouterProvider router={router} />
   );
 }
 
