@@ -3,7 +3,7 @@ import '../styles/style.css';
 import React, { useState, useEffect} from 'react';
 
 function AllSky(props) {
-    const [time, setTime] = useState('');
+    const [time, setTime] = useState('Syncing...');
     const [imageObj, setImageObj] = useState(
         {
             url: `${props.baseURL}?timestamp=${Date.now()}`
@@ -24,7 +24,7 @@ function AllSky(props) {
         const m = d.getMinutes();
         const s = d.getSeconds();
 
-        const time = `${formatTime(h)}${h}:${formatTime(m)}${m}:${formatTime(s)}${s}`
+        const time = `Last updated: ${formatTime(h)}${h}:${formatTime(m)}${m}:${formatTime(s)}${s}`
         setTime(time);
     }
 
@@ -51,7 +51,7 @@ function AllSky(props) {
         <div className='skycard'>  
             <img key={Date.now()} src={imageObj.url} alt="AllSky view of skies over the RAO"/>
             <div className='update-container'>
-                <p className='update-text'>Last Updated {time}</p>
+                <p className='update-text'>{time}</p>
             </div>
         </div>
     );

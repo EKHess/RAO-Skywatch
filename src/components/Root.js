@@ -1,6 +1,7 @@
 import React from 'react'
 import Clock from './Clock';
 import Header from './Header'
+import Footer from './Footer';
 import { Outlet } from 'react-router-dom';
 
 function Root() {
@@ -16,9 +17,7 @@ function Root() {
             </main>
 
             <footer>
-                <div className='signature-container'>
-                <p className='signature'>Made by <a href='#'>Eric Hess</a></p>
-                </div>
+                <Footer/>
             </footer>
         </>
     )
