@@ -11,6 +11,10 @@
     box-sizing: border-box;
 }
 
+html {
+    font-size: 16px;
+}
+
 :root {
     --bg-color: #424549;
     --discord-purple: #7289da;
@@ -127,9 +131,18 @@ body {
 .update-container {
     /* border: 1px solid red; */
     padding: 5px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+}
+
+.update-container ion-icon {
+    color: var(--grey-text);
 }
 
 .update-text {
+    /* border: 1px solid red; */
     color: var(--grey-text);
     font-family: var(--mono-font);
     font-optical-sizing: auto;

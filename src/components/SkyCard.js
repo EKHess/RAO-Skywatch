@@ -52,6 +52,7 @@ function AllSky(props) {
             <img key={Date.now()} src={imageObj.url} alt="AllSky view of skies over the RAO"/>
             <div className='update-container'>
                 <p className='update-text'>{time}</p>
+                <ion-icon name="information-circle-outline"></ion-icon>
             </div>
         </div>
     );
