@@ -1,6 +1,7 @@
 import '../styles/reset.css';
 import '../styles/style.css';
 import React, { useState, useEffect} from 'react';
+import { Link } from 'react-router-dom';
 
 function AllSky(props) {
     const [time, setTime] = useState('Syncing...');
@@ -52,7 +53,7 @@ function AllSky(props) {
             <img key={Date.now()} src={imageObj.url} alt="AllSky view of skies over the RAO"/>
             <div className='update-container'>
                 <p className='update-text'>{time}</p>
-                <ion-icon name="information-circle-outline"></ion-icon>
+                <Link to='/info'><ion-icon name="information-circle-outline"></ion-icon></Link>
             </div>
         </div>
     );

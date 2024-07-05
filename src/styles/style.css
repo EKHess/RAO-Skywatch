@@ -139,6 +139,11 @@ body {
 
 .update-container ion-icon {
     color: var(--grey-text);
+    font-size: 1.5rem;
+}
+
+.update-container ion-icon:hover {
+    color: var(--discord-purple);
 }
 
 .update-text {
@@ -148,6 +153,74 @@ body {
     font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
+}
+
+.info-container {
+    /* border: 1px solid red; */
+}
+
+.info-section {
+    /* border: 1px solid red; */
+    margin-top: 40px;
+}
+
+.info-header {
+    font-size: 1.5rem;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.info-text {
+    /* border: 1px solid red; */
+    width: 600px;
+    margin: 0 auto;
+    font-family: var(--mono-font);
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    color: var(--grey-text);
+
+    padding-bottom: 40px;
+}
+
+.info-text .sub-paragraph {
+    margin-top: 20px;
+}
+
+.info-text a {
+    color: var(--discord-purple);
+    text-decoration: none;
+}
+
+.info-text a:hover {
+    text-decoration: underline;
+}
+
+.purple-text {
+    font-weight: 700;
+    color: var(--discord-purple);
+}
+
+.back-btn-container {
+    /* border: 1px solid red; */
+    border: 1px solid var(--grey-text);
+    border-radius: 3px;
+    width: 70px;
+    margin-bottom: 20px;
+    display: flex;
+
+    font-family: var(--mono-font);
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    color: var(--grey-text);
+    padding: 3px;
+}
+
+.back-btn-container:hover {
+    background-color: var(--grey-text);
+    color: var(--bg-color);
+    cursor: pointer;
 }
 
 .single-img-container {

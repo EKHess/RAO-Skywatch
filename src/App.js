@@ -4,6 +4,7 @@ import Home from './components/Home';
 import AllSky from './components/AllSky';
 import SQM from './components/SQM';
 import WeatherCam from './components/WeatherCam';
+import Info from './components/Info';
 
 import { Route, RouterProvider, createBrowserRouter, createRoutesFromElements } from 'react-router-dom';
 
@@ -13,6 +14,7 @@ const router = createBrowserRouter(createRoutesFromElements(
     <Route path='allsky' element={ <AllSky/> }/>
     <Route path='sqm' element={ <SQM/> }/>
     <Route path='weather-cam' element={ <WeatherCam/> }/>
+    <Route path='info' element={ <Info/> }/>
   </Route>
 ))
 
