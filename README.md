@@ -1,5 +1,12 @@
 # RAO Skywatch
 
+> [!CAUTION]
+>
+> ## Still in Developement
+>
+> This project was built with [`create-react-app`](https://github.com/facebook/create-react-app), which has since been depricated. This cautionary note will remain until I have successfully deployed the application (if that is still possible.)
+>
+
 # Description
 RAO Skywatch (designed for instrumentation at the Rothney Astropysical Observatory) is a React web application designed to house views of three critical pieces of technology:
 
