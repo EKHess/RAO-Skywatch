@@ -1,11 +1,6 @@
 # RAO Skywatch
 
-> [!CAUTION]
->
-> ## Still in Developement
->
-> This project was built with [`create-react-app`](https://github.com/facebook/create-react-app), which has since been depricated. This cautionary note will remain until I have successfully deployed the application (if that is still possible.)
->
+This project is currently deployed here: https://rao-skywatch.vercel.app/home
 
 # Description
 RAO Skywatch (designed for instrumentation at the Rothney Astropysical Observatory) is a React web application designed to house views of three critical pieces of technology:
@@ -30,7 +25,7 @@ Project features include:
 - Integration of the Government of Canada Weather radar on the 'WeatherCam' page for a convenient eye on the local weather.
 
 # How to Use
-To use the app, simply visit: *insert link*
+To use the app, simply visit: https://rao-skywatch.vercel.app/home
 
 # Technologies
 Project technologies include:
